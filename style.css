@@ -1,0 +1,180 @@
+:root {
+    --blue-color: #17a2b8;
+    --red-color: #dc3545;
+    --green-color: #28a745;
+    --pink-color: #cc2b5e;
+    --purple-color: #753a88;
+    --dark-purple: #42275a;
+    --light-purple: #734b6d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: url('img/city.jpg') no-repeat center top/cover;
+}
+
+body:after {
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(132, 106, 221, 0.9);
+}
+
+.container {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border: none;
+    border-radius: 1rem;
+    width: 60%;
+    height: 70%;
+}
+
+.img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+img {
+    width: 60%;
+}
+
+.content-wrapper {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.content-wrapper h1 {
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+input[type=text], textarea, input[type=submit] {
+    font-weight: 700;
+    font-size: 1.4rem;
+    width: 60%;
+}
+
+input[type=text], textarea {
+    background-color: #ddd;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 3rem;
+    padding-left: 2rem;
+}
+
+input[type=text], input[type=submit] {
+    height: 7%;
+}
+
+textarea {
+    max-width: 60%;
+    min-width: 60%;
+    min-height: 20%;
+    height: 20%;
+    max-height: 60%;
+    margin-bottom: 2rem;
+    padding: 1rem 2rem;
+}
+
+input[type=submit] {
+    background-color: rgb(132,106,221);
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    color: #fff;
+    transition: all .3s;
+}
+
+input[type=submit]:hover {
+    background-color: #333;
+}
+
+@media(max-width: 1600px) {
+    input[type=text], textarea, input[type=submit] {
+        width: 80%;
+    }
+
+    textarea {
+        max-width: 80%;
+        min-width: 80%;
+    }
+}
+
+@media(max-width: 1400px) {
+    img {
+        width: 80%;
+    }
+}
+
+@media(max-width: 1250px) {
+    .img-wrapper {
+        display: none;
+    }
+
+    .content-wrapper {
+        width: 100%;
+    }
+}
+
+@media(max-width: 800px) {
+    .container {
+        height: 80%;
+        width: 70%;
+    }
+}
+
+@media(max-width: 800px) {
+    .container {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media(max-width: 600px) {
+    input[type=text], textarea, input[type=submit] {
+        width: 90%;
+    }
+
+    textarea {
+        max-width: 90%;
+        min-width: 90%;
+    }
+}
+
+
+
+
+
+
+
